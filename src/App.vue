@@ -7,6 +7,7 @@ export default {
     }
   }
 }
+
 </script>
 
 <template>
@@ -23,11 +24,7 @@ export default {
   <input v-model="textInput" placeholder="Digite algo">
   <button @click="list.push(textInput)">Add o texto ao lado na lista</button>
 </div>
-<div id="flex">
-  
-  <input type="number" :value="V" @change="setV">
-  <button v-if="v > 0" id="btnRmv">Remover o item {{ v }}</button>
-</div>
+
 
 <div id="flex">
   <ul v-if="show && list.length">
