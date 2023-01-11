@@ -12,12 +12,12 @@ export default {
 
 <template>
 
-<div id="flex">
+<div class="flex">
   <p v-if="list.length">A lista atualmente possui {{ list.length }} itens.</p>
   <p v-else> Lista Vazia!</p>
 </div>
 
-<div id="flex">
+<div class="flex">
   <button @click="list.push(list.length +1)" >Add um valor no final</button>
   <button @click="list.pop()">Remover um valor do final</button>
   <button @click="list.splice(list.length/2)">Remover metade dos valores</button>
@@ -26,7 +26,7 @@ export default {
 </div>
 
 
-<div id="flex">
+<div class="flex">
   <ul v-if="show && list.length">
     <li  v-for="item in list"> {{ item }}</li>
   </ul>
@@ -36,7 +36,7 @@ export default {
 </template>
 
 <style>
-#flex{
+.flex{
   display: flex;
   justify-content: center;
   align-content: center;
